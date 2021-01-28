@@ -3,6 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Text;
+using TransformationTracker.Models;
 
 namespace TransformationTracker.Data
 {
@@ -12,5 +13,6 @@ namespace TransformationTracker.Data
             : base(options)
         {
         }
+        public DbSet<TransformationTracker.Models.Pdsa> Pdsa { get; set; }
     }
 }
